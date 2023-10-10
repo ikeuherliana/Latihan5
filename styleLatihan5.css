@@ -2,3 +2,82 @@ h1{
     font-family: Monsterrat;
     color:black;    
 }
+
+p{
+    color:lightslategrey;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+nav a{
+    color:black;
+    margin-left: 12px;
+}
+
+nav > a:hover{
+    color:lightblue;
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    top: 0;
+    z-index: 5;
+}
+
+img{
+    width: 400px;
+}
+
+.bttnInfo{
+    background-color: white;
+    color: black;
+    padding: 8px 8px;
+    border: 2px solid deepskyblue;
+}
+
+.bttnContact{
+    background-color: deepskyblue;
+    color: whitesmoke;
+    padding: 8px 8px;
+    border: 2px solid deepskyblue;
+}
+
+.srvc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    top: 0;
+    z-index: 5;
+}
+
+.srvc > div {
+    margin-right: 20px;
+}
+
+.srvc > div:last-child {
+    margin-right: 0;
+}
+
+.imgSrvc{
+    width: 300px;
+}
+
+.srvc .imgSrvc {
+    background-color:black; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    padding: 10px; /* Atur padding sesuai keinginan Anda */
+    border-radius: 8px; /* Memberikan sudut bulat jika diinginkan */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
