@@ -1,6 +1,6 @@
 h1{
     font-family: Monsterrat;
-    color:black;    
+    color:white;    
 }
 
 p{
@@ -15,7 +15,8 @@ p{
     position: sticky;
     top: 0;
     z-index: 5;
-    background-color: white;
+    background-color: #5e509f;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav a{
@@ -24,7 +25,7 @@ nav a{
 }
 
 nav > a:hover{
-    color:lightblue;
+    color: orange;
 }
 
 .landing {
@@ -36,22 +37,50 @@ nav > a:hover{
     z-index: 5;
 }
 
+.about {
+    padding: 16px 128px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.about-img {
+    float: left;
+    margin-right: 80px;
+}
+
 img{
     width: 400px;
+    border-radius: 3px;
+}
+
+.number-container {
+  display: inline-block;
+  text-align: center;
+  margin: 0 50px;
+  vertical-align: top;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px solid orange;
+  padding-bottom: 10px;
 }
 
 .bttnInfo{
     background-color: white;
     color: black;
     padding: 8px 8px;
-    border: 2px solid deepskyblue;
+    border: 2px solid orange;
+    border-radius: 3px;
 }
 
 .bttnContact{
-    background-color: deepskyblue;
+    background-color: orange;
+    border: orange;
     color: whitesmoke;
     padding: 8px 8px;
-    border: 2px solid deepskyblue;
+    border-radius: 3px;
 }
 
 .srvc{
@@ -61,6 +90,25 @@ img{
     padding: 16px 128px;
     top: 0;
     z-index: 5;
+}
+
+.srvc1 .srvc2 .srvc3{
+    background-color: orange;
+}
+
+.srvc1:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.srvc2:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.srvc3:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 .srvc > div {
@@ -76,8 +124,119 @@ img{
 }
 
 .srvc .imgSrvc {
-    background-color:black; /* Ganti dengan warna latar belakang yang Anda inginkan */
-    padding: 10px; /* Atur padding sesuai keinginan Anda */
-    border-radius: 8px; /* Memberikan sudut bulat jika diinginkan */
+    background-color:black;
+    border-radius: 3px; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-box{
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.call-center {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 50% ;
+    height:50%;
+}
+
+.form-center {
+    flex: 1;
+    padding: 20px;
+    border: 3px solid orange;
+}
+
+h2 {
+    color:black;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
+
+.form-data {
+    display: flex;
+    align-items: center; 
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px; 
+    flex: 1; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black; 
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-item {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.bttnSubmit{
+    background-color: orange;
+    color: whitesmoke;
+    padding: 10px 280px;
+    border-radius: 3px;
+
+}
+
+.location{
+    margin-left: 30px;
+    margin-bottom: 150px;
+}
+
+.maps-src {
+    float: right;
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #5e509f; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 128px;
+    top: 0;
+    z-index: 5;
+}
+
+.left-footer {
+    color: white;
+}
+
+.right-footer img {
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    filter: invert(1);
+}
+
+h3 {
+    font-size: 20px;
 }
